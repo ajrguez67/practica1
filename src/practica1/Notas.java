@@ -92,6 +92,7 @@ public class Notas {
         } catch (InputMismatchException e) {
         	// Limpiamos el buffer
             entrada.nextLine();
+            // Lanzamos exceptión en caso de que se introduzca valor que no sea un número
             throw new EntradaNoNumericaException("Entrada no numérica. Intente de nuevo.");
         }
     }
