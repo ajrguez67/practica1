@@ -90,6 +90,7 @@ public class Notas {
         try {
             return entrada.nextDouble();
         } catch (InputMismatchException e) {
+        	// Limpiamos el buffer
             entrada.nextLine();
             throw new EntradaNoNumericaException("Entrada no numérica. Intente de nuevo.");
         }
